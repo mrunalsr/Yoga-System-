@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Yoga Karma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .menu {
+            float: right;
+            margin-top: -40px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        .profile {
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 40px;
+            width: 80%;
+            max-width: 800px;
+            margin: 100px auto 20px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile img {
+            border-radius: 50%;
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h1, h2, h3, h4 {
+            color: #4CAF50;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        button a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>YOGA KARMA</h1>
+        <p>Your Journey to Health and Well-being</p>
+        <div class="menu">
+            <a href="1st.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="review page.html">About</a>
+            <a href="logout.html">Logout</a>
+        </div>
+    </header>
+
+    <div class="profile">
+        <img src="https://images.unsplash.com/photo-1615022702095-ff2c036f3360?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D" alt="User Profile Picture">
+        <h4>Ruhi Mallik</h4>
+        <p>Location: Pune, Maharashtra</p>
+        <p>Email: ruhiimalik@gmail.com</p>
+        <p>Mobile No: **********</p>
+    </div>
+
+    <footer>
+        <button onclick="handleButtonClick(event)"><a href="setting.html">Settings</a></button>
+        <button onclick="handleButtonClick(event)"><a href="review page.html">Review</a></button>
+    </footer>
+
+    <script>
+        function handleButtonClick(event) {
+            // Prevent default behavior if necessary
+            event.preventDefault();
+            // Add logic for handling button click if needed
+        }
+    </script>
+</body>
+
+</html>

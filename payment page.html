@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page for YOGA KARMA</title>
+    <style>
+        body {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+
+        .menu {
+            float: right;
+            margin-top: -50px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        .payment-container {
+            margin-top: 80px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        .payment-interface {
+            display: none;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .payment-interface h2 {
+            color: #4CAF50;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>YOGA KARMA</h1>
+        <p>Your Journey to Health and Well-being</p>
+        <div class="menu">
+            <a href="1st.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="review page.html">About</a>
+            <a href="profile.html">Profile</a>
+            <a href="logout.html">Logout</a>
+        </div>
+    </header>
+
+    <div class="payment-container">
+        <h1>Select Payment Method</h1>
+        <form action="process_payment.php" method="post">
+            <label for="payment_method">Payment Method:</label>
+            <select id="payment_method" name="payment_method" onchange="showPaymentInterface()">
+                <option value="upi">UPI</option>
+                <option value="card">Credit/Debit Card</option>
+                <option value="net_banking">Net Banking</option>
+                <option value="emi">EMI</option>
+            </select>
+            <br><br>
+
+            <div class="payment-interface" id="upi_interface">
+                <h2>UPI Payment Interface</h2>
+                <!-- Add UPI payment fields here -->
+            </div>
+
+            <div class="payment-interface" id="card_interface">
+                <h2>Credit/Debit Card Payment Interface</h2>
+                <!-- Add Card payment fields here -->
+            </div>
+
+            <div class="payment-interface" id="net_banking_interface">
+                <h2>Net Banking Payment Interface</h2>
+                <!-- Add Net Banking payment fields here -->
+            </div>
+
+            <div class="payment-interface" id="emi_interface">
+                <h2>EMI Payment Interface</h2>
+                <!-- Add EMI payment fields here -->
+            </div>
+
+            <div class="payment-interface">
+                <h2>Amount you have to pay: ₹400</h2>
+            </div>
+
+            <footer>
+                <section>
+                    <button onclick="handleButtonClick(event)"><a href="paaymentsuccess.html">Please click here to pay</a></button>
+                </section>
+            </footer>
+        </form>
+
+        <div class="contact-info">
+            <h2>Contact us: <a href="tel:020-24221161">020-24221161</a></h2>
+        </div>
+    </div>
+
+    <script>
+        function showPaymentInterface() {
+            var selectedOption = document.getElementById('payment_method').value;
+            var paymentInterfaces = document.getElementsByClassName('payment-interface');
+
+            for (var i = 0; i < paymentInterfaces.length; i++) {
+                paymentInterfaces[i].style.display = 'none';
+            }
+
+            document.getElementById(selectedOption + '_interface').style.display = 'block';
+        }
+
+        function handleButtonClick(event) {
+            event.preventDefault();
+            // Add logic for handling the button click
+        }
+    </script>
+</body>
+
+</html>

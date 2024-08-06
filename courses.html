@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Karma - Daily Routine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            color: #4CAF50;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #4CAF50;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4CAF50;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            width: calc(25% - 20px); /* Four items per row with space */
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        .card button:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 1200px) {
+            .card {
+                width: calc(33.333% - 20px); /* Three items per row */
+            }
+        }
+
+        @media (max-width: 900px) {
+            .card {
+                width: calc(50% - 20px); /* Two items per row */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                width: 100%; /* One item per row */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YOGA KARMA</h1>
+        <p>Your Journey to Health and Well-being</p>
+    </header>
+
+    <nav>
+        <a href="1st.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="review page.html">About</a>
+        <a href="profile.html">Profile</a>
+        <a href="logout.html">Logout</a>
+    </nav>
+
+    <h2>Daily Yoga Routine</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <img src="https://previews.123rf.com/images/teravector/teravector1811/teravector181100367/127636981-relaxing-and-stress-relief-at-workplace-cartoon-vector-concept-businessman-with-untied-necktie.jpg" alt="Stress Release">
+                <button onclick="window.location.href='stress.html'">Stress Release</button>
+            </div>
+            <div class="card">
+                <img src="https://static.vecteezy.com/system/resources/previews/003/025/522/non_2x/fit-cartoon-weight-loss-women-before-and-after-diet-vector.jpg" alt="Weight Loss">
+                <button onclick="window.location.href='weight-loss.html'">Weight Loss</button>
+            </div>
+            <div class="card">
+                <img src="https://i0.wp.com/genefitletics.com/wp-content/uploads/2021/12/depositphotos_119662140-stock-illustration-skin-care-woman.jpg?resize=828%2C620&ssl=1" alt="Glowing Skin">
+                <button onclick="window.location.href='glowing-skin.html'">Glowing Skin</button>
+            </div>
+            <div class="card">
+                <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2019/05/7MinWorkout_May_Moves_KneeInCrunches.jpg" alt="Abdomen Strength">
+                <button onclick="window.location.href='abdomen-strength.html'">Abdomen Strength</button>
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/1212547222/vector/woman-feel-pain-in-the-back.jpg?s=612x612&w=0&k=20&c=hoLz4uwQ7M7iy2ZvDMLNoQt8bYvWbRBf9Ya5SqZNBr0=" alt="Back Pain">
+                <button onclick="window.location.href='back-pain.html'">Back Pain</button>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/premium-vector/boy-rubs-his-face-with-his-hand-conjunctivitis-child-inflammation-injury-eye-tearfulness-symptom-eye-disease_499739-719.jpg" alt="Eye Problem">
+                <button onclick="window.location.href='eye-problem.html'">Eye Problem</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
